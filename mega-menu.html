@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Megamenu</title>
+	<link rel="stylesheet" href="css/mega.css">
+</head>
+<body>
+	<div class="main-menu">
+		<nav>
+			<ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li class="parent"><a href="#">About</a>
+					<ul class="sub-menu">
+						<li><a href="#">About 1</a>
+							<ul class="sub-menu">
+								<li><a href="#">About 1.1</a></li>
+								<li><a href="#">About 2.1</a></li>
+								<li><a href="#">About 3.1</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="#">About 2</a></li>
+						<li><a href="#">About 3</a></li>
+						<li><a href="#">About 4</a></li>
+					</ul>
+				</li>
+				<li class="parent"><a href="#">Product</a>
+					<ul class="mega-menu">
+						<li><a href="#">Men</a>
+							<ul>
+								<li><a href="#">Shirt</a></li>
+								<li><a href="#">Pant</a></li>
+								<li><a href="#">Coat</a></li>
+								<li><a href="#">Tai</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Women</a>
+							<ul>
+								<li><a href="#">Shirt-T</a></li>
+								<li><a href="#">Pant</a></li>
+								<li><a href="#">Coat</a></li>
+								<li><a href="#">Tai</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Accessories</a>
+							<ul>
+								<li><a href="#">Share</a></li>
+								<li><a href="#">Pant</a></li>
+								<li><a href="#">Coat</a></li>
+								<li><a href="#">Tai</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Baby</a>
+							<!-- <ul>
+								<li><a href="#">Shirt-baby</a></li>
+								<li><a href="#">Pant</a></li>
+								<li><a href="#">Coat</a></li>
+								<li><a href="#">Tai</a></li>
+							</ul> -->
+							<div class="img-menu">
+								<a href="">
+									<img src="images/Product.jpg" alt="Sản phẩm bán chạy">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- full screen overlay with css and little Javascript -->
+
+	<!-- <div id="nav" class="overlay">
+		<a href="#" class="close--btn">x</a>
+		<div class="overlay--content">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Images</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="" class="">open</a>
+		
+		<span class="openNav">open</span>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script lang="javascript">
+		
+		$(document).ready(function() {
+			$(function(){
+				$('.main-menu li.parent').hover(function(){
+					$(this).children('ul').fadeIn();
+				},function(){
+					$(this).children('ul').fadeOut();
+				});
+			});
+			$('.main-menu ul>li>a').click(function(e){
+				e.preventDefault();
+				$(this).parent().toggleClass('active');
+			});
+			$('.openNav').click(function(e){
+				e.preventDefault();
+				$('#myNav').css('width','50%');
+
+			});
+			$('.closebtn').click(function(e){
+				e.preventDefault();
+				$('#myNav').css('width','0');
+
+			});
+			
+		});
+		
+	</script> -->
+</body>
+</html>

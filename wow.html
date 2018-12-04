@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Học chuyển động hiệu ứng wow.js</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+	<link rel="stylesheet" type="text/css" href="css/imagehover.css">
+	<script src="js/wow.min.js"></script>
+	<style>
+		.block1{width: 500px;height:200px;margin: 250px 100px;background: blue;}
+		.block2{width: 500px;height:200px;margin: 250px 100px;background: green;}
+		.block3{width: 500px;height:200px;margin: 250px 100px;background: pink;}
+		.block4{width: 500px;height:200px;margin: 250px 100px;background: gray;}
+		.block5{width: 500px;height:200px;margin: 250px 100px;background: yellow;}
+		.nodung{
+			background: green;
+			padding:100px 0px;
+			overflow: hidden;
+		}
+		.cangiua{
+			width: 960px;
+			margin:auto;
+		}
+		.anh{
+			border: 1px solid gray;
+		    height: 400px;
+		    width: 30%;
+		    float: left;
+		    margin-right: 4%;
+		    margin-top: 50px;
+		}
+		.anh:nth-child(1){
+			animation-name: bounceIn;
+			animation-delay: 2s;
+			animation-duration: 5s;
+		}
+		/*[class^='imghvr-'],
+		[class*=' imghvr-'] {
+		  background-color: #D14233;
+		}*/
+		.demo .imghvr-slide-up a {
+			display: block;
+			position: relative;
+		}
+		 [class^='imghvr-'] figcaption, 
+		 [class*=' imghvr-'] figcaption{
+		            top:80%;
+		}
+	</style>
+	<script>
+        new WOW().init();
+     </script>
+
+</head>
+<body>
+	<figure class="imghvr-stack-up">
+		  <img src="images/sp02.png" alt="example-image">
+		  <figcaption>
+		    <h3 class="ih-fade-down ih-delay-sm ">Oscar Wilde</h3>
+		    <p class="ih-zoom-in ih-delay-md">
+		      <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+		    </p>
+		    <a class="ih-fade-up ih-delay-lg button" href="#">Read More</a>
+		  </figcaption>
+		  <a href="#"></a>
+	</figure>
+	<div class="demo">
+         <div class="imghvr-slide-up">
+         	<!-- <a href=""> -->
+         		<img src="images/sp04.png" alt="example-image">
+         	<!-- </a> -->
+            <figcaption>
+            	 <a class="button btn btn-success" href="#">Mua ngay</a>
+              <!-- <h3>Hello World</h3>
+              <p>Life is too important to be taken seriously!</p> -->
+            </figcaption>
+            <!-- <a href="javascript:;"></a> -->
+         </div>
+          <!-- <textarea onclick="this.focus();this.select()" readonly="readonly">imghvr-slide-up</textarea> -->
+     </div>
+	<div class="block1 wow bounceInUp  data-wow-duration=3s data-wow-delay=3s data-wow-iteration=5"></div>
+	<div class="block2 wow tada data-wow-duration=3s data-wow-delay=3s data-wow-iteration=5"></div>
+	<div class="block3 wow swing data-wow-duration=3s data-wow-delay=3s data-wow-iteration=5"></div>
+	<div class="block4 wow rollIn data-wow-duration=3s data-wow-delay=3s data-wow-iteration=5"></div>
+	<div class="block5 wow bounceInDown data-wow-duration=3s data-wow-delay=3s data-wow-iteration=5"></div>
+	<div class="noidung">
+		<div class="cangiua">
+			<img src="images/sp02.png" alt="" class='anh wow'>
+			<img src="images/sp03.png" alt="" class='anh wow bounceInLeft data-wow-iteration=2 data-wow-duration=5s'>
+			<img src="images/sp04.png" alt="" class='anh wow bounceInRight data-wow-iteration=2 data-wow-duration=5s'>
+			<img src="images/sp05.png" alt="" class='anh wow bounceInUp data-wow-iteration=2 data-wow-duration=5s'>
+			<img src="images/sp06.png" alt="" class='anh wow bounceInDown data-wow-iteration=2 data-wow-duration=5s'>
+			<img src="images/sp01.png" alt="" class='anh wow bounceOut data-wow-iteration=2 data-wow-duration=5s'>
+		</div>
+	</div>
+</body>
+</html>
